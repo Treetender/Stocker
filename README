@@ -1,0 +1,5 @@
+Stocker is simply an exercise in my Xamarin studies.  I am using it to learn about Task management in C#, Portable class libraries, UI studies for different platforms, and RESTFul queries.  In theory, it will fetch stock data and analyse it using an SQLite database.  I wanted to do data fetching online to test threaded code and UI responsiveness.
+
+I love C#, and I want to hone my skills with it, and try out the amazing Xamarin library.
+
+I do not intend to sell this application, and it is intended stictly for my own personal use.  As this project evolves, so too will this README.
