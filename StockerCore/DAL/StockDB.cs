@@ -27,6 +27,15 @@ namespace StockerCore.DAL
             return mDB.Table<Stock>().FirstOrDefault(s => s.ID == id);
         }
 
+        public IEnumerable<Stock> GetSellableStocks()
+        {
+            return (    from s in mDB.Table<Stock>()
+                       where s.ChangeInMovingAverage50 < s.ChangeInMovingAverage200
+                      select s
+                    ).ToList();
+        }
+
+
         public void DeleteStock(int id)
         {
             mDB.Delete<Stock>(id);
