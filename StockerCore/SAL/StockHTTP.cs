@@ -12,7 +12,6 @@ namespace StockerCore.SAL
     {
         private static readonly string sCSV_URL = "http://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&render=download";
         private static readonly string sQuery_SQL_Base = "Select * From yahoo.finance.quotes";
-        //private static readonly string sQuery_SQL = "select * from yahoo.finance.quotes where symbol in (\"YHOO\",\"AAPL\",\"GOOG\",\"MSFT\")";
         private static readonly string sQUERY_ENV = "http://datatables.org/alltables.env";
         private static readonly int STOCKS_PER_QUERY = 40;
 
