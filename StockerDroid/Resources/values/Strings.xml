@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Download">Download Stocks</string>
+    <string name="ApplicationName">Stocker</string>
+    <string name="ViewStocks">View Stocks</string>
+</resources>
