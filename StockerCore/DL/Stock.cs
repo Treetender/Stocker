@@ -1,14 +1,10 @@
-﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace StockerCore.DL
 {
     public class Stock
     {
         #region Properties
-        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
 
         public string Symbol { get; set; }
@@ -41,11 +37,8 @@ namespace StockerCore.DL
         public DateTime? LastTradeDate { get; set; }
 
         //These are computed, and thus, we need not the DB here
-        [Ignore]
         public decimal Total { get { return Quantity ?? 0 * DayValue ?? 0; } }
-        [Ignore]
         public decimal DividendValue { get { return Quantity ?? 0 * DividendPerShare ?? 0; } }
-        [Ignore]
         public bool IsUp { get { return Change > 0; } }
         #endregion Properties
 

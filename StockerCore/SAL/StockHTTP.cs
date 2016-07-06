@@ -117,5 +117,21 @@ namespace StockerCore.SAL
                     }).ToList();
         }
 
+        public async Task<List<Stock>> GetStocks()
+        {
+            var http = new StockHTTP();
+            var queries = await http.DownloadCompaniesFromCSVAsync();
+            List<Stock> stocks = new List<Stock>();
+            decimal i = 1.0M;
+            decimal totals = queries.Count;
+            foreach (var query in queries)
+            {
+                List<Stock> results = await http.DownloadStocksFromYQL(query);
+                results.ForEach(r => stocks.Add(r));
+                i += 1;
+            }
+            return stocks;
+        }
+
     }
 }
