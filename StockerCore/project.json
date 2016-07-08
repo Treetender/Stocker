@@ -2,9 +2,17 @@
   "supports": {},
   "dependencies": {
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "1.0.0-rc2-23910"
   },
   "frameworks": {
-    "netstandard1.3": {}
+    "netstandard1.3": { },
+    "net461":{
+            "frameworkAssemblies":{
+                "System.Net":"",
+                "System.Net.Http":"",
+                "System.Text.RegularExpressions":"",
+                "System.Threading.Tasks":""
+            }
+        }
   }
 }

@@ -14,14 +14,36 @@ namespace StockerCMD
             Console.WriteLine("Downloading HTML Code:");
 
             List<Stock> stocks = null;
-            Task.Run(() =>
+            try
             {
-                stocks = GetStocks().Result;
-            }).Wait();
+                Task.Run(() =>
+                {
+                    stocks = GetStocks().Result;
+                }).Wait();
+            }
+            catch (AggregateException ae)
+            {
+                Console.WriteLine("The following " + ae.InnerExceptions.Count() + " exceptions occurred:");
+                Console.WriteLine(GetAggregateExceptionMessages(ae));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
 
             stocks.ForEach(s => Console.WriteLine(s));
             Console.ReadLine();
         }
+
+        private static IEnumerable<string> GetAggregateExceptionMessages(AggregateException exception)
+        {
+            foreach (var ie in exception.InnerExceptions)
+            {
+                yield return ie.Message;
+            }
+        }
+
 
         static async Task<List<Stock>> GetStocks()
         {

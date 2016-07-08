@@ -119,17 +119,21 @@ namespace StockerCore.SAL
 
         public async Task<List<Stock>> GetStocks()
         {
-            var http = new StockHTTP();
-            var queries = await http.DownloadCompaniesFromCSVAsync();
             List<Stock> stocks = new List<Stock>();
-            decimal i = 1.0M;
-            decimal totals = queries.Count;
-            foreach (var query in queries)
+            try
             {
-                List<Stock> results = await http.DownloadStocksFromYQL(query);
-                results.ForEach(r => stocks.Add(r));
-                i += 1;
+                var http = new StockHTTP();
+                var queries = await http.DownloadCompaniesFromCSVAsync();
+                decimal i = 1.0M;
+                decimal totals = queries.Count;
+                foreach (var query in queries)
+                {
+                    List<Stock> results = await http.DownloadStocksFromYQL(query);
+                    results.ForEach(r => stocks.Add(r));
+                    i += 1;
+                }
             }
+            catch { throw; }
             return stocks;
         }
 
