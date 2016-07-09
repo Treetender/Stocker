@@ -32,7 +32,10 @@ namespace StockerCMD
             }
 
 
+            Console.WriteLine("Download Complete.  Press any key to see stocks");
+            Console.ReadLine();
             stocks.ForEach(s => Console.WriteLine(s));
+            Console.WriteLine("Completed! Press any key to exit");
             Console.ReadLine();
         }
 
