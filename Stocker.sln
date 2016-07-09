@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockerCore", "StockerCore\StockerCore.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockerCMD", "StockerCMD\StockerCMD.csproj", "{3D6E4869-3C0A-40CD-9269-D3ABAD9FB805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockerDroid", "StockerDroid\StockerDroid.csproj", "{B229C511-30A5-4450-A893-B1830CCD4BF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,30 @@ Global
 		{3D6E4869-3C0A-40CD-9269-D3ABAD9FB805}.Release|x64.Build.0 = Release|Any CPU
 		{3D6E4869-3C0A-40CD-9269-D3ABAD9FB805}.Release|x86.ActiveCfg = Release|Any CPU
 		{3D6E4869-3C0A-40CD-9269-D3ABAD9FB805}.Release|x86.Build.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|ARM.Deploy.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x64.Build.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x86.Build.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|ARM.Build.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|ARM.Deploy.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x64.ActiveCfg = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x64.Build.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x64.Deploy.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x86.ActiveCfg = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x86.Build.0 = Release|Any CPU
+		{B229C511-30A5-4450-A893-B1830CCD4BF4}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
